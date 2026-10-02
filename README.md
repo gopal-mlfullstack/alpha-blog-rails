@@ -1,24 +1,36 @@
-# README
+# Alpha Blog
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A small learning project built with **Ruby on Rails** to practice the fundamentals of Rails development.
 
-Things you may want to cover:
+## What I Learned
 
-* Ruby version
+* Rails MVC structure
+* Routes and controllers
+* Models and validations
+* CRUD operations
+* Forms
+* Flash messages
+* Database migrations
+* PostgreSQL
+* ERB views
+* Rails deployment
 
-* System dependencies
+## CRUD Flow
 
-* Configuration
+**Create → Edit → Update → Show → Delete**
 
-* Database creation
+## Live Demo
 
-* Database initialization
+https://alpha-blog-rails.onrender.com/articles
 
-* How to run the test suite
+> **Note:** The application is hosted on Render's free plan. If the server has been inactive for a while, it may take a short time to start when you first open the application. Please wait a few moments for it to load.
 
-* Services (job queues, cache servers, search engines, etc.)
+## Tech Stack
 
-* Deployment instructions
+* Ruby
+* Ruby on Rails
+* PostgreSQL
+* ERB
+* HTML/CSS
 
-* ...
+> Built as a learning project while learning Ruby on Rails.
