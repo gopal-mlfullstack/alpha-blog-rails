@@ -1,11 +1,15 @@
-<h1>Showing Article Details </h1>
-<hr>
-<p><strong>Title:  </strong><%= @article.title%> </p>
-<hr>
-<p><strong>Description: </strong> <%= @article.description%></p>
-<hr>
-<%= link_to "Edit", edit_article_path(@article)%> |
-<%= link_to "Delete", article_path(@article),data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}%> |
-<%= link_to "Return to articles listing", articles_path %>
+<div class="container py-5 text-center" >
+    <h1 class="text-center" >Showing Article Details </h1>
+    <hr>
+    <p><strong>Title </strong><br><%= @article.title%> </p>
+    <hr>
+    <p><strong>Description </strong><br> <%= @article.description%></p>
+    <hr>
+    <div class="d-flex gap-3 justify-content-center">
+        <%= link_to "Edit", edit_article_path(@article),class:"link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" %> 
+        <%= link_to "Delete", article_path(@article),data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class:"link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"%> 
+        <%= link_to "Return to articles listing", articles_path, class:"link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" %>
+    </div>    
 
 
+</div>

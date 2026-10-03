@@ -61,3 +61,9 @@ group :test do
   gem "selenium-webdriver"
 end
 gem "json", "< 3.0.0"
+
+gem "cssbundling-rails", "~> 1.4"
+
+gem "dartsass-rails", "~> 0.5.1"
+
+gem "bootstrap", "~> 5.3"

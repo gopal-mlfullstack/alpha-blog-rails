@@ -23,8 +23,27 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
-    <%= render 'layouts/messages'%>
+<body class="d-flex flex-column min-vh-100">
+  <%= render 'layouts/messages' %>
+
+  <main class="flex-grow-1">
     <%= yield %>
-  </body>
+  </main>
+
+  <footer class="bg-light border-top py-4">
+    <div class="container text-center">
+      <p class="mb-2">
+        <%= link_to "Articles", articles_path,
+            class: "link-underline link-underline-opacity-0 link-underline-opacity-100-hover me-2" %>
+        |
+        <%= link_to "Home", root_path,
+            class: "link-underline link-underline-opacity-0 link-underline-opacity-100-hover ms-2" %>
+      </p>
+
+      <small class="text-muted">
+        © <%= Time.current.year %> Alpha Blog
+      </small>
+    </div>
+  </footer>
+</body>
 </html>

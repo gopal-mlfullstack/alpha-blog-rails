@@ -1,5 +1,14 @@
-<h1 style="color: #3b82f6; font-size: 32px; font-family: sans-serif; text-align: center; margin-bottom: 20px;">
-  THIS IS A HOME PAGE FOR ALPHA BLOG.....
-</h1>
-<%= link_to "Articles listing", articles_path%> |
-<%= link_to "About Page", about_path%> 
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-10 text-center">
+      <h1 class="display-3 fw-bold text-primary mb-3">
+        Alpha Blog
+      </h1>
+      <p class="lead text-secondary mb-4">
+        Alpha Blog is a simple Ruby on Rails learning project built to practice CRUD operations, validations, forms, and MVC fundamentals.
+      </p>
+      <%= link_to "Articles", articles_path, class:"btn btn-primary btn-lg me-2"%></a>
+      <%= link_to "About Page", about_path, class:"btn btn-outline-secondary btn-lg " %></a>
+    </div>
+  </div>
+</div>
