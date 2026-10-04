@@ -1,1 +1,13 @@
 @import "bootstrap";
+
+.navbar {
+    background: black;
+}
+
+.jumbotron {
+    background-image: url('blog-hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
