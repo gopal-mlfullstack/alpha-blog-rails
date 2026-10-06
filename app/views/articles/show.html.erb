@@ -1,15 +1,57 @@
-<div class="container py-5 text-center" >
-    <h1 class="text-center" >Showing Article Details </h1>
-    <hr>
-    <p><strong>Title </strong><br><%= @article.title%> </p>
-    <hr>
-    <p><strong>Description </strong><br> <%= @article.description%></p>
-    <hr>
-    <div class="d-flex gap-3 justify-content-center">
-        <%= link_to "Edit", edit_article_path(@article),class:"link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" %> 
-        <%= link_to "Delete", article_path(@article),data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class:"link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"%> 
-        <%= link_to "Return to articles listing", articles_path, class:"link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" %>
-    </div>    
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-8">
 
+      <div class="card shadow-sm">
 
+        <div class="card-header text-center">
+          <h1 class="h3 mb-0">Article Details</h1>
+        </div>
+
+        <div class="card-body">
+
+          <div class="mb-4">
+            <h2 class="h5 text-muted">Title</h2>
+            <p class="fs-4 mb-0">
+              <%= @article.title %>
+            </p>
+          </div>
+
+          <hr>
+
+          <div class="mt-4">
+            <h2 class="h5 text-muted">Description</h2>
+            <p class="mb-0">
+              <%= @article.description %>
+            </p>
+          </div>
+
+        </div>
+
+        <div class="card-footer">
+          <div class="d-flex flex-wrap gap-2 justify-content-center">
+
+            <%= link_to "Edit",
+                edit_article_path(@article),
+                class: "btn btn-outline-primary" %>
+
+            <%= link_to "Delete",
+                article_path(@article),
+                data: {
+                  turbo_method: :delete,
+                  turbo_confirm: "Are you sure?"
+                },
+                class: "btn btn-outline-danger" %>
+
+            <%= link_to "Back to Articles",
+                articles_path,
+                class: "btn btn-outline-secondary" %>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
 </div>
