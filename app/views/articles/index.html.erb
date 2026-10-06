@@ -1,7 +1,9 @@
 <div class="page-content">
-
-  <h1 class="text-center mt-4">Listing All Articles</h1>
-
+  <div class="text-center">
+    <h1 class="mt-4">Listing All Articles</h1>
+    <%= link_to "New Article", new_article_path,
+          class: "btn btn-outline-primary mt-3" %>
+  </div>        
   <div class="container">
     <% @articles.each do |article| %>
       <div class="row justify-content-center">
