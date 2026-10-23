@@ -60,7 +60,7 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
-gem "json", "< 3.0.0"
+gem "json", "< 4.0.0"
 
 gem "cssbundling-rails", "~> 1.4"
 
